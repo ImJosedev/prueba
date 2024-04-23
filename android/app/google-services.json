@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "950317710567",
+    "project_id": "teleconsultorio-51f9e",
+    "storage_bucket": "teleconsultorio-51f9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950317710567:android:1be0c68b5ef0236a923642",
+        "android_client_info": {
+          "package_name": "med.unne.edu.ar.teleconsultorio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950317710567-lgn9lft60nmhg9dusdvbdc0j13puce0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC45ltjYSldhNJBJ3HcHSBVWmHMHBCqZdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950317710567-lgn9lft60nmhg9dusdvbdc0j13puce0f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
