@@ -10,11 +10,18 @@ import 'package:opentok_flutter/opentok.dart' as opentok;
 import 'package:opentok_flutter/opentok_view.dart';
 import 'package:permission_handler/permission_handler.dart';
 
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
 import 'models/session_manager.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+  // await NotificationService.initNotifications();
   await NotificationService.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   //runApp(const MyApp());
   runApp(MyApp());
 }

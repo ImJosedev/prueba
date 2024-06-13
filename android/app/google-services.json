@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "950317710567-u9eccjni0th5tv0dddrqm2v56d6mbied.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "med.unne.edu.ar.teleconsultorio",
+            "certificate_hash": "0363a01325893463fca32aaf7fe8eaaf6b02d43d"
+          }
+        },
+        {
           "client_id": "950317710567-lgn9lft60nmhg9dusdvbdc0j13puce0f.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,6 +37,13 @@
             {
               "client_id": "950317710567-lgn9lft60nmhg9dusdvbdc0j13puce0f.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "950317710567-spkn9k1n111huf9dm99oo1v8jit831g8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "med.unne.edu.ar.teleconsultorio"
+              }
             }
           ]
         }

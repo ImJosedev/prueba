@@ -30,7 +30,10 @@ class _NuevaConsultaState extends State<NuevaConsulta> {
   final _formKeyNewQuery = GlobalKey<FormState>();
   Servicio _selectService = Servicio(2000, 'Nada', 'Nada', 'Nada');
   String _comentario = '';
-  final List<Item> _data = [Item(index: 0,header: 'Síntomas', description: 'La selección de uno o mas síntomas es opcional.'),Item(index: 1,header: 'Servicios', description: 'Seleccioné uno de los servicios de salud ofrecidos por la institución.'),Item(index: 2,header: 'Estudios y/o exámenes médicos', description: 'La selección es opcional. Para que un nuevo archivo se lista deberá ser cargado previamente.')];
+  final List<Item> _data = [
+      Item(index: 0,header: 'Síntomas', description: 'La selección de uno o mas síntomas es opcional.'),
+      Item(index: 1,header: 'Servicios', description: 'Seleccioné uno de los servicios de salud ofrecidos por la institución.'),
+      Item(index: 2,header: 'Estudios y/o exámenes médicos', description: 'La selección es opcional. Para que un nuevo archivo se lista deberá ser cargado previamente.')];
 
   //Usuario user;
   //_NuevaConsultaState(this.user);
@@ -121,7 +124,8 @@ class _NuevaConsultaState extends State<NuevaConsulta> {
           ListView.builder(
           physics: NeverScrollableScrollPhysics(),
           shrinkWrap: true,
-          itemCount: 6,
+          itemCount: 6, //OLD  
+          // itemCount: widget.user.instituciones[0].sintomas.length, //JOSE 
           itemBuilder: (BuildContext context, int index) {
             return CheckboxListTile(
               //title: Text('Gujarat, India'),

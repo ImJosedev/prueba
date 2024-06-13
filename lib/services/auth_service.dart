@@ -34,7 +34,8 @@ class AuthService {
       switch (response.statusCode) {
         case 200:
           SessionManager.setLogin(json.decode(response.body)['status']);
-          SessionManager.setToken(json.decode(response.body)['token']);
+          SessionManager.setToken(json.decode(response.body)['token']); //old
+          // SessionManager.setToken(json.decode(response.body)['token']['original']['access_token']); //new
           SessionManager.setEmail(email);
           return 200;
         case 401:
@@ -47,6 +48,27 @@ class AuthService {
     }
   }
 
+  //////////////////////new function////////////////////////////////////// 
+  // Future<void> refresh() async{
+  //   try {
+  //     var url =Uri.parse('https://simed.med.unne.edu.ar/api/refresh');
+  //     String token =await SessionManager.getToken();
+  //     var response = await http.post(url, headers: {HttpHeaders.authorizationHeader: 'Bearer' + token});
+  //     switch (response.statusCode){
+  //       case 200:
+  //       SessionManager.setToken(json.decode(response.body)['token']['original']['access_token']);
+  //       break;
+  //       default:
+  //       log("switcd default refresh method");
+  //       break;
+
+  //     }
+  //   } on SocketException{
+  //     log("Socket exception in refresh method");
+  //   }
+  // }
+
+///////////////////////////////////////////////////////////////////////////////////
   Future<dynamic> authenticateCheck() async {
     final Map<String, dynamic> errorJson = new Map<String, dynamic>();
     errorJson['status'] = false;

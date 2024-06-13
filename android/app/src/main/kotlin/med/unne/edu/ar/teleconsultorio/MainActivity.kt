@@ -134,10 +134,9 @@ class MainActivity: FlutterActivity() {
     private fun addFlutterChannelListener() {
        val binaryMessenger = flutterEngine?.dartExecutor?.binaryMessenger
         ?: throw IllegalStateException("BinaryMessenger is null")
-
             MethodChannel(binaryMessenger, "com.vonage").setMethodCallHandler { call, result ->
     // private fun addFlutterChannelListener() {
-    //     MethodChannel(flutterEngine?.dartExecutor?.binaryMessenger, "com.vonage").setMethodCallHandler { call, result ->
+    //     MethodChannel(flutterEngine?.dartExecutor?.binaryMessenger?; "com.vonage").setMethodCallHandler { call, result ->
 
             when (call.method) {
                 "initSession" -> {
@@ -214,7 +213,7 @@ class MainActivity: FlutterActivity() {
 
     // private fun notifyFlutter(state: SdkState) {
     //     Handler(Looper.getMainLooper()).post {
-    //         MethodChannel(flutterEngine?.dartExecutor?.binaryMessenger, "com.vonage")
+    //         MethodChannel(flutterEngine?.dartExecutor?.binaryMessenger?, "com.vonage")
     //                 .invokeMethod("updateState", state.toString())
     //     }
     // }

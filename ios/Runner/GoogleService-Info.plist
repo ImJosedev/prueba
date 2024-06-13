@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>950317710567-spkn9k1n111huf9dm99oo1v8jit831g8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.950317710567-spkn9k1n111huf9dm99oo1v8jit831g8</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>950317710567-u9eccjni0th5tv0dddrqm2v56d6mbied.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBMOM8QeEGIzDwZN2GJitJ1k7bl35qo8kU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>950317710567</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>med.unne.edu.ar.teleconsultorio</string>
+	<key>PROJECT_ID</key>
+	<string>teleconsultorio-51f9e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>teleconsultorio-51f9e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:950317710567:ios:6c16c1c4e8e9aecf923642</string>
+</dict>
+</plist>

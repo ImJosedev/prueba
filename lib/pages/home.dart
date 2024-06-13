@@ -38,26 +38,33 @@ class _HomeState extends State<Home> {
   @override
   void initState(){
     super.initState();
-    WidgetsBinding.instance!.addPostFrameCallback((_) => _check());
+    WidgetsBinding.instance.addPostFrameCallback((_) => _check());
+    // NotificationService.onClickNotification.listen((message) { //NEW
     NotificationService.messagesStream.listen((message) {
-      var valueMap = message.split(",");
-      switch(valueMap[2]){
-        case 'open':
-          //log('message');
-          //WidgetsBinding.instance!.addPostFrameCallback((_) => _showMyDialog('mensaje en home'));
-          _DialogFirebase('Una Teleconsulta se acaba de iniciar. El sistema se redireccionará al inicio.');
-          break;
-        case 'back':
+    log('entra');
+    _check();
+    //   var valueMap = message.split(",");
 
-          break;
-        case 'finality':
+    //   switch(valueMap[2]){
+    //     case 'open':
+    //       //log('message');
+    //       //WidgetsBinding.instance!.addPostFrameCallback((_) => _showMyDialog('mensaje en home'));
+    //       _DialogFirebase('Una Teleconsulta se acaba de iniciar. El sistema se redireccionará al inicio.');
+    //       break;
+    //     case 'back':
 
-          break;
-        default:
+    //       break;
+    //     case 'finality':
 
-          break;
-      }
+    //       break;
+    //     default:
+
+    //       break;
+    //   }
     });
+  }
+  void dispose() async{
+    super.dispose();
   }
 
   void _check() async{
